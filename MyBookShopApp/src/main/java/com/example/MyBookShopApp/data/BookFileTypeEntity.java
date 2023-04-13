@@ -1,12 +1,9 @@
 package com.example.MyBookShopApp.data;
-
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Data
-@NoArgsConstructor
 @Entity
 @Table(name = "book_file_type")
 public class BookFileTypeEntity {
