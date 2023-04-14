@@ -19,7 +19,7 @@ public class SpringfoxConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.withClassAnnotation(Api.class))
-                .paths(PathSelectors.ant("/api/*"))
+                .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
     }
@@ -29,10 +29,10 @@ public class SpringfoxConfig {
                 "Bookshop API",
                 "API for bookstore",
                 "1.0",
-                "http://www.termsofservice.org",
-                new Contact("API owner", "http://www.ownersite.org", "owner@rmailer.org"),
+                "https://www.termsofservice.org",
+                new Contact("API owner", "https://www.ownersite.org", "owner@rmailer.org"),
                 "API license",
-                "http://www.license.edu.org",
+                "https://www.license.edu.org",
                 new ArrayList<>()
                 );
     }

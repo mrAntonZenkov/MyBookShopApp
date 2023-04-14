@@ -6,6 +6,6 @@
                    http://www.liquibase.org/xml/ns/dbchangelog-ext
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-<!--    <include file="db.changelog/liquibase-outputChangeLogFile_init.xml"/>-->
+    <include file="db.changelog/liquibase-outputChangeLogFile_init.xml"/>
 
 </databaseChangeLog>
